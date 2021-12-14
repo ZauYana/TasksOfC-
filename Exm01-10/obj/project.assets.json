@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/yanazaulskaya/Desktop/С##/Lection3 /Practicum3/Exm01-10/Exm01.csproj",
+      "projectUniqueName": "/Users/yanazaulskaya/Repos/TasksOfC-/Exm01-10/Exm01.csproj",
       "projectName": "Exm01",
-      "projectPath": "/Users/yanazaulskaya/Desktop/С##/Lection3 /Practicum3/Exm01-10/Exm01.csproj",
+      "projectPath": "/Users/yanazaulskaya/Repos/TasksOfC-/Exm01-10/Exm01.csproj",
       "packagesPath": "/Users/yanazaulskaya/.nuget/packages/",
-      "outputPath": "/Users/yanazaulskaya/Desktop/С##/Lection3 /Practicum3/Exm01-10/obj/",
+      "outputPath": "/Users/yanazaulskaya/Repos/TasksOfC-/Exm01-10/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/yanazaulskaya/.nuget/NuGet/NuGet.Config"
