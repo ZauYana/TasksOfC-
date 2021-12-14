@@ -12,12 +12,19 @@
  *.sln.docstates
  
  # C# build files ignore
- *.suo
- *.user
- _ReSharper.*
- bin
- obj
- packages 
+[Oo]bj
+[Bb]in
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.ncb
+*.log 
+*.DS_Store
+[Tt]humbs.db 
+_ReSharper.*
+*.resharper
+Ankh.NoLoad
 
  # User-specific files (MonoDevelop/Xamarin Studio)
  *.userprefs
