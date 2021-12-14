@@ -121,7 +121,46 @@ int SecOfNum = num%100;
 Console.WriteLine(SecOfNum/10);*/
 
 
+//11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
+
+
+/*int count = new Random().Next(10, 99);
+Console.WriteLine(count);
+
+int a = count / 10;
+int b = count % 10;
+
+if (a > b) Console.WriteLine($"Из числа" + " "+ count+ " " + "наибольшей цифрой является"+ " " + a);
+else Console.WriteLine($"Из числа" + " "+ count+ " " + "наибольшей цифрой является"+ " " + b);*/
+
+
+//12. Удалить вторую цифру трёхзначного числа
+
+/*int number = new Random().Next (100,999);
+Console.WriteLine(number);
+int result = (number - (number%100))/10 + number%10;
+Console.WriteLine(result);*/
+
+//13. Выяснить, кратно ли число заданному, если нет, вывести остаток.
+
+/*int a = 87;
+int b = 32;
+     
 
 
 
+int Multiplicity (int z)
+{
+    int z = a- b(a/b);
+    return z;
+}
 
+int result = Multiplicity(a,b);
+Console.WriteLine(result);*/
+
+//14. Найти третью цифру числа или сообщить, что её нет
+
+/*int a = new Random ().Next (1,1000);
+Console.WriteLine(a);
+if (a/100==0) Console.WriteLine("Третья цифра отсутсвует");
+else Console.WriteLine(a%10);*/
