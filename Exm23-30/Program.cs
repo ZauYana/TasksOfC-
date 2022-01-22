@@ -152,24 +152,24 @@ Console.WriteLine(SumOfNum);*/
 
 
 
-int ShowCubeMultiple2(int arg)
-{
-    int i = 1;
-    for (i = 1; i <= arg; i++)
-    {
-        if ((i * i * i) % 2 == 0)
-        {
-            Console.WriteLine($"{i} - Последняя цифра куба числа {i} - четная");
+// int ShowCubeMultiple2(int arg)
+// {
+//     int i = 1;
+//     for (i = 1; i <= arg; i++)
+//     {
+//         if ((i * i * i) % 2 == 0)
+//         {
+//             Console.WriteLine($"{i} - Последняя цифра куба числа {i} - четная");
     
-        }
-        else Console.WriteLine($"{i} - Не соотвествует заданным параметрам");
+//         }
+//         else Console.WriteLine($"{i} - Не соотвествует заданным параметрам");
 
-    }
-    return i*i*i;
+//     }
+//     return i*i*i;
 
 
-}
+// }
 
-int Q = 5;
-ShowCubeMultiple2(Q);
+// int Q = 5;
+// ShowCubeMultiple2(Q);
 
