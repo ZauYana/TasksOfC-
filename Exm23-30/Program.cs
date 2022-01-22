@@ -151,25 +151,18 @@ Console.WriteLine(SumOfNum);*/
 //30. Показать кубы чисел, заканчивающихся на четную цифру
 
 
-
-// int ShowCubeMultiple2(int arg)
+// void ShowCubeMultiple2(int arg)
 // {
-//     int i = 1;
-//     for (i = 1; i <= arg; i++)
+
+//     for (int i = 1; i <= arg; i++)
 //     {
 //         if ((i * i * i) % 2 == 0)
 //         {
-//             Console.WriteLine($"{i} - Последняя цифра куба числа {i} - четная");
-    
+//             Console.WriteLine($"{i * i * i} - Последняя цифра куба числа {i} - четная");
 //         }
-//         else Console.WriteLine($"{i} - Не соотвествует заданным параметрам");
-
 //     }
-//     return i*i*i;
-
-
 // }
 
-// int Q = 5;
-// ShowCubeMultiple2(Q);
+
+// ShowCubeMultiple2(7);
 
