@@ -8,7 +8,7 @@ int[,] CreateMatrix(int rows, int cols)
     {
         for (int j = 0; j < cols; j++)
         {
-            matrixWithRandomNum[i, j] = new Random().Next(1, 3);
+            matrixWithRandomNum[i, j] = new Random().Next(1, rows*cols);
         }
     }
     return matrixWithRandomNum;
@@ -54,7 +54,6 @@ int[,] MatrixProduct(int[,] matr1, int[,] matr2)
                 }
                 
             }
-        
 
     }
 
@@ -63,8 +62,8 @@ int[,] MatrixProduct(int[,] matr1, int[,] matr2)
 
 
 
-int[,] matrixOne = CreateMatrix(3, 2);
-int[,] matrixTwo = CreateMatrix(2, 3);
+int[,] matrixOne = CreateMatrix(2, 3);
+int[,] matrixTwo = CreateMatrix(3, 3);
 PrintMatrix(matrixOne, "Matrix 1");
 Console.WriteLine();
 PrintMatrix(matrixTwo, "Matrix 2");
