@@ -180,27 +180,31 @@ string[] arrayOfStr = newText.Split(" ");
 
 string[] FindUniqWords(string[] text)
 {
-string[] clearArrayOfWords = { text[0] };
+    string[] clearArrayOfWords = { text[0] };
     for (int i = 0; i < text.Length; i++)
     {
-        
+
         for (int j = 0; j < clearArrayOfWords.Length; j++)
         {
-            if (text [i] == clearArrayOfWords[j])
+            if (text[i] == clearArrayOfWords[j])
             {
                 break;
             }
             else
+            {
                 Array.Resize(ref clearArrayOfWords, clearArrayOfWords.Length + 1);
-            clearArrayOfWords[clearArrayOfWords.Length - 1] = text[i];
+                clearArrayOfWords[clearArrayOfWords.Length - 1] = text[i];
+                break;
+            }
         }
     }
     return clearArrayOfWords;
 }
-
-string[] textWithUniqWords = FindUniqWords(arrayOfStr);
-foreach (var item in textWithUniqWords)
-{
-    Console.WriteLine(item);
-}
+Console.WriteLine (arrayOfStr.Length);
+// string[] textWithUniqWords = FindUniqWords(arrayOfStr);
+// Console.WriteLine (textWithUniqWords.Length);
+// foreach (var item in textWithUniqWords)
+// {
+//     Console.WriteLine(item);
+// }
 //Console.WriteLine(textWithUniqWords.Length);
