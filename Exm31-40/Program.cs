@@ -439,25 +439,60 @@
 
 // 40. В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом
 
-double [] CreateArray (double minValue, double maxValue, int length)
-{
-    double [] arrayOfDouble = new double [length];
-    for (int i = 0; i<length; i++)
-    {
-        arrayOfDouble [i] = new Random ().NextDouble ()*(maxValue-minValue)+minValue;
-    }
-    return arrayOfDouble;
-}
+// double [] CreateArray (double minValue, double maxValue, int length)
+// {
+//     double [] arrayOfDouble = new double [length];
+//     for (int i = 0; i<length; i++)
+//     {
+//         arrayOfDouble [i] = Math.Round ((new Random ().NextDouble ()*(maxValue-minValue)+minValue),2);
+//     }
+//     return arrayOfDouble;
+// }
 
-void PrintArray (double [] arrayOfDoub)
-{
-    for (int i = 0; i<arrayOfDoub.Length;i++)
-    {
-        Console.Write ($"{[i]} - {arrayOfDoub [i]} ");
-    }
-}
+// double FindMaxDouble ( double [] arrayDoubles)
+// {
+//     double maxCount = arrayDoubles [0];
+//     for (int i = 0; i<arrayDoubles.Length;i++)
+//     {
+//         if (arrayDoubles [i]> maxCount) maxCount = arrayDoubles [i];
+//     }
+//     return maxCount;
+// }
 
-double [] arrayCreted = CreateArray (1.5,7.5,10);
-PrintArray (arrayCreted);
+// double FindMinDouble ( double [] arrayDoubles)
+// {
+//     double minCount = arrayDoubles [0];
+//     for (int i = 0; i<arrayDoubles.Length;i++)
+//     {
+//         if ( arrayDoubles [i]< minCount) minCount = arrayDoubles [i];
+//     }
+//     return minCount;
+// }
+
+// double FindTheDistBWMaxMin (double maxValue, double minValue)
+// {
+//     double resultBWMaxMin = maxValue - minValue;
+//     return resultBWMaxMin;
+// }
+
+
+
+// void PrintArray (double [] arrayOfDoub)
+// {
+//     for (int i = 0; i<arrayOfDoub.Length;i++)
+//     {
+//         Console.Write ($"[{i}] - {arrayOfDoub [i]} ");
+//     }
+// }
+
+// double [] arrayCreted = CreateArray (1.5,7.5,10);
+// PrintArray (arrayCreted);
+// Console.WriteLine ();
+// double maxDoubleValue = FindMaxDouble (arrayCreted);
+// double minDoubleValue = FindMinDouble (arrayCreted); 
+// double distanceBWMaxMin = FindTheDistBWMaxMin (maxDoubleValue,minDoubleValue);
+// Console.WriteLine ($"{"Max Value in Array of Doubles"} - {maxDoubleValue}");
+// Console.WriteLine ($"{"Min Value in Array of Doubles"} - {minDoubleValue}");
+// Console.WriteLine ($"{"The difference between max value and min value " } - {distanceBWMaxMin}");
 
 
