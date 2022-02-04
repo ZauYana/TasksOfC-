@@ -368,72 +368,96 @@
 
 //39. Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
 
-int[] CreateArray(int length)
+// int[] CreateArray(int length)
 
+// {
+
+//     int[] array = new int[length];
+
+//     for (int i = 1; i < array.Length; i++)
+
+//     {
+
+//         array[0] = 0;
+
+//         array[i] = array[i - 1] + 1;
+
+//     }
+
+//     return array;
+
+// }
+
+// int[] FindComposition(int[] array)
+
+// {
+//     int i = 0;
+//     int j = array.Length - 1; 
+
+//     int[] array1 = new int[array.Length / 2];  
+
+//     int ind = 0;
+
+//     while (i <= array.Length / 2 && ind <= array1.Length && j>=array.Length/2)
+
+//     {
+
+//         array1[ind] = array[i] * array[j]; 
+//         i++;
+//         j--;
+//         ind++;
+
+//     }
+//     return array1;
+// }
+
+// void PrintArray(int[] array)
+
+// {
+
+//     int l = array.Length;
+
+//     for (int i = 0; i < l; i++)
+
+//     {
+
+//         Console.Write($"{array[i]}; ");
+
+//     }
+
+// }
+
+// var arrayForFuture = CreateArray(10);
+
+// PrintArray(arrayForFuture);
+
+// Console.WriteLine("___");
+
+// int[] newArray = FindComposition(arrayForFuture);
+
+// PrintArray(newArray);
+
+// 40. В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом
+
+double [] CreateArray (double minValue, double maxValue, int length)
 {
-
-    int[] array = new int[length];
-
-    for (int i = 1; i < array.Length; i++)
-
+    double [] arrayOfDouble = new double [length];
+    for (int i = 0; i<length; i++)
     {
-
-        array[0] = 0;
-
-        array[i] = array[i - 1] + 1;
-
+        arrayOfDouble [i] = new Random ().NextDouble ()*(maxValue-minValue)+minValue;
     }
-
-    return array;
-
+    return arrayOfDouble;
 }
 
-int[] FindComposition(int[] array)
-
+void PrintArray (double [] arrayOfDoub)
 {
-    int i = 0;
-    int j = array.Length - 1; 
-
-    int[] array1 = new int[array.Length / 2];  
-
-    int ind = 0;
-
-    while (i <= array.Length / 2 && ind <= array1.Length && j>=array.Length/2)
-
+    for (int i = 0; i<arrayOfDoub.Length;i++)
     {
-
-        array1[ind] = array[i] * array[j]; 
-        i++;
-        j--;
-        ind++;
-
+        Console.Write ($"{[i]} - {arrayOfDoub [i]} ");
     }
-    return array1;
 }
 
-void PrintArray(int[] array)
+double [] arrayCreted = CreateArray (1.5,7.5,10);
+PrintArray (arrayCreted);
 
-{
-
-    int l = array.Length;
-
-    for (int i = 0; i < l; i++)
-
-    {
-
-        Console.Write($"{array[i]}; ");
-
-    }
-
-}
-
-var arrayForFuture = CreateArray(10);
-
-PrintArray(arrayForFuture);
-
-Console.WriteLine("___");
-
-int[] newArray = FindComposition(arrayForFuture);
-
-PrintArray(newArray);
 
