@@ -391,24 +391,21 @@ int[] CreateArray(int length)
 int[] FindComposition(int[] array)
 
 {
-
     int i = 0;
+    int j = array.Length - 1; 
 
-    int j = array.Length - 1;
-
-    int[] array1 = new int[array.Length / 2];
+    int[] array1 = new int[array.Length / 2];  
 
     int ind = 0;
 
-    while (i <= array.Length / 2)
+    while (i <= array.Length / 2 && ind <= array1.Length && j>=array.Length/2)
 
     {
 
-        array1[ind] = array[i] * array[j];
-
+        array1[ind] = array[i] * array[j]; 
         i++;
-
         j--;
+        ind++;
 
     }
     return array1;
@@ -424,7 +421,7 @@ void PrintArray(int[] array)
 
     {
 
-        Console.Write($"{array[i]};");
+        Console.Write($"{array[i]}; ");
 
     }
 
@@ -436,7 +433,7 @@ PrintArray(arrayForFuture);
 
 Console.WriteLine("___");
 
-var newArray = FindComposition(arrayForFuture);
+int[] newArray = FindComposition(arrayForFuture);
 
 PrintArray(newArray);
 
